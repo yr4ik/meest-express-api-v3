@@ -1,0 +1,33 @@
+{
+    "name": "yr4ik/meest-express-api-v3",
+    "type": "library",
+    "description": "PHP class for Meest Express API v3",
+    "keywords": [
+        "api",
+        "library",
+        "delivery",
+        "meest",
+        "meest api",
+        "meest express api"
+    ],
+    "homepage": "https://github.com/yr4ik/meest-express-api-v3",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Polevik Yurii",
+            "email": "yr4ik_07@ukr.net",
+            "homepage": "https://github.com/yr4ik"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "MeestExpress\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "config": {
+        "bin-dir": "./"
+    }
+}
