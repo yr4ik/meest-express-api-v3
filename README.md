@@ -7,7 +7,7 @@
 composer require yr4ik/meest-express-api-v3
 
 
-### Example
+### Examples
 ```php
 
 use MeestExpress\MeestExpress;
@@ -17,11 +17,11 @@ $login = 'login';
 $pass = 'pass';
 
 $meest_express = new MeestExpress($login, $pass);
-$meest_search = $meest_express->setFormat('json')->search();
+$meest_search = $meest_express->setFormat('array')->search();
 
 $filter = new Filter();
 $filter->name = 'UKRAI%';
-var_dump($meest_search->country($filter));
+var_dump($meest_search->country($filter)->getResult());
 
 
 $filter = new Filter();
