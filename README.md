@@ -7,6 +7,23 @@
 composer require yr4ik/meest-express-api-v3
 
 
+### MeestExpress methods
+* __construct($login, $pasword, $throwErrors = true, $connectionType = 'curl');
+* setLogin(string $login);
+* getLogin();
+* setPassword(string $password);
+* getPassword();
+* setCookieStorageVar(string $var);
+* getCookieStorageVar();
+* setConnectionType(string curl | file_get_contents);
+* getConnectionType();
+* setFormat(string json | array | xml);
+* getFormat();
+* setToken(string $token, int $expire=0, string $refresh='')
+* getToken();
+* authorize();
+* request(string $method, array $data, string $format=null)
+
 
 ### Search methods
 
@@ -60,6 +77,12 @@ composer require yr4ik/meest-express-api-v3
 * payTerminal(float $latitude, float $longitude);
 
 
+### Search result methods
+* getResponse();
+* getResponseSource();
+* getStatus();
+* getInfo();
+* getResult();
 
 
 ### Examples
