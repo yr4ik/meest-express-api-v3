@@ -3,8 +3,11 @@
 namespace MeestExpress;
 
 use Exception;
-use MeestExpress\Search;
 use MeestExpress\Result;
+use MeestExpress\Filter;
+use MeestExpress\Search;
+use MeestExpress\Tracking;
+
 
 
 /**
@@ -360,16 +363,28 @@ class MeestExpress
 
 	
 	
-	
+    /**
+     * Get Search API 
+     */
     public function search()
     {
         return new Search($this);
     }
 	
-	
-
-	
-	
+    /**
+     * Get Tracking API 
+     */
+    public function tracking()
+    {
+        return new Tracking($this);
+    }	
+    /**
+     * Get Filter API 
+     */
+    public function filter(array $data = [])
+    {
+        return new Filter($data);
+    }
 	
 	
 }
