@@ -85,6 +85,8 @@ composer require yr4ik/meest-express-api-v3
 * getResult();
 
 
+
+
 ### Examples
 ```php
 
